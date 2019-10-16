@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aad599830b63a69a22f79dbc05c92e62",
+    "revision": "67ae04cf1fbed167ec941154db691f5a",
     "url": "/blueocean/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/blueocean/static/css/2.62027c08.chunk.css"
   },
   {
-    "revision": "7beecb145a93d705b3e0",
+    "revision": "261c37634839317dd17d",
     "url": "/blueocean/static/css/main.a3f479b1.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/blueocean/static/js/2.d64cb078.chunk.js"
   },
   {
-    "revision": "7beecb145a93d705b3e0",
-    "url": "/blueocean/static/js/main.4e91a1dc.chunk.js"
+    "revision": "261c37634839317dd17d",
+    "url": "/blueocean/static/js/main.37bbbb22.chunk.js"
   },
   {
     "revision": "7b0ffba116ec62138bba",
