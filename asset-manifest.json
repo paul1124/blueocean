@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/blueocean/static/css/main.a3f479b1.chunk.css",
-    "main.js": "/blueocean/static/js/main.37bbbb22.chunk.js",
-    "main.js.map": "/blueocean/static/js/main.37bbbb22.chunk.js.map",
+    "main.js": "/blueocean/static/js/main.880dcb00.chunk.js",
+    "main.js.map": "/blueocean/static/js/main.880dcb00.chunk.js.map",
     "runtime-main.js": "/blueocean/static/js/runtime-main.efc9e27c.js",
     "runtime-main.js.map": "/blueocean/static/js/runtime-main.efc9e27c.js.map",
     "static/css/2.62027c08.chunk.css": "/blueocean/static/css/2.62027c08.chunk.css",
     "static/js/2.d64cb078.chunk.js": "/blueocean/static/js/2.d64cb078.chunk.js",
     "static/js/2.d64cb078.chunk.js.map": "/blueocean/static/js/2.d64cb078.chunk.js.map",
     "index.html": "/blueocean/index.html",
-    "precache-manifest.9d2ba55fc58ff02bc90763bbf13398f2.js": "/blueocean/precache-manifest.9d2ba55fc58ff02bc90763bbf13398f2.js",
+    "precache-manifest.7235ed9ad417e93d9ced4fb530b4dee8.js": "/blueocean/precache-manifest.7235ed9ad417e93d9ced4fb530b4dee8.js",
     "service-worker.js": "/blueocean/service-worker.js",
     "static/css/2.62027c08.chunk.css.map": "/blueocean/static/css/2.62027c08.chunk.css.map",
     "static/css/main.a3f479b1.chunk.css.map": "/blueocean/static/css/main.a3f479b1.chunk.css.map",
@@ -40,6 +40,6 @@
     "static/css/2.62027c08.chunk.css",
     "static/js/2.d64cb078.chunk.js",
     "static/css/main.a3f479b1.chunk.css",
-    "static/js/main.37bbbb22.chunk.js"
+    "static/js/main.880dcb00.chunk.js"
   ]
 }
