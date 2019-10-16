@@ -1,0 +1,58 @@
+@import '../../main.css';
+
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
+}
+
+.nav {
+    opacity: 0;
+    /* overflow: hidden; */
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.nav-icon {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 0;
+    font-size: 1.1em;
+    padding: 2em;
+    color: white;
+}
+
+.nav-main {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 2em;
+}
+
+.nav-link a {
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-link a:hover {
+    color: blue;
+}

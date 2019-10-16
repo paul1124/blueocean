@@ -1,0 +1,43 @@
+@import '../../main.css';
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.sampleimage {
+    z-index: 1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.103), rgba(0, 0, 0, 0.68)), url('../images/sample/wall.jpeg');
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.sampleimage-intro {
+    margin-top: 6em;
+    text-transform: uppercase;
+    color: white;
+    transform: translateY(2em);
+    animation-name: titleLoad;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+.sampleimage-container {
+    opacity: 0;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2em;
+    overflow: hidden;
+    transform: translateY(2em);
+    animation-name: titleLoad;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+}
+
+.image-gallery-slide img {
+    width: 100%;
+    height: 27em;
+}
+.image-gallery-thumbnail img {
+    vertical-align: middle;
+    width: 100%;
+    height: 3.5em;
+}
