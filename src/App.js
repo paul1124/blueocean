@@ -17,10 +17,10 @@ function App() {
             <p className="nav-icon-title">Blue Ocean</p>
           </div>
           <ul className="nav-main">
-              <li className="nav-link"><Link to="/">Home</Link></li>
-              <li className="nav-link"><Link to="/about">Services</Link></li>
-              <li className="nav-link"><Link to="/sample">Sample Pictures</Link></li>
-              <li className="nav-link"><Link to="/contact">Contact</Link></li>
+              <li className="nav-link"><Link to="/blueocean">Home</Link></li>
+              <li className="nav-link"><Link to="/blueocean/about">Services</Link></li>
+              <li className="nav-link"><Link to="/blueocean/sample">Sample Pictures</Link></li>
+              <li className="nav-link"><Link to="/blueocean/contact">Contact</Link></li>
           </ul>
         </nav>
         <TransitionGroup>
@@ -30,10 +30,10 @@ function App() {
               timeout={1000}
             >
             <Switch location={location}>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/about" component={About}/>
-              <Route exact path="/contact" component={Contact} />
-              <Route exact path="/sample" component={Sampleimage} />
+              <Route exact path="/blueocean" component={Home} />
+              <Route exact path="/blueocean/about" component={About}/>
+              <Route exact path="/blueocean/contact" component={Contact} />
+              <Route exact path="/blueocean/sample" component={Sampleimage} />
             </Switch>
             </CSSTransition>
         </TransitionGroup>

@@ -65,7 +65,7 @@ export default function About() {
                         style={onHover ? hover : linkStyle }
                         onMouseEnter={onMouseOver}
                         onMouseLeave={onMouseOver}
-                        to="/contact"
+                        to="/blueocean/contact"
                     >
                         Get a Free Estimate
                     </Link>
