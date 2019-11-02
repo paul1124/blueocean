@@ -56,3 +56,72 @@
 .nav-link a:hover {
     color: blue;
 }
+.nav-main-small {
+    width: 100%;
+    transition: background 1s ease-in-out;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.nav-small-list {
+    height: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 150;
+    transition: height 1s ease-in-out;
+    overflow: hidden;
+}
+.nav-small-button {
+    display: block;
+    margin: 0 auto;
+    background: none;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 0.25em;
+    font-size: 1.5em;
+    font-weight: 200;
+    border-bottom: 1px dotted white;
+}
+.nav-small-button:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.nav-small-link {
+    /* height: 100%; */
+    /* align-self: center; */
+    color: white;
+    margin: 1em 0;
+    transition: 0.5s all ease-in-out;
+    /* border-bottom: 1px dotted white; */
+}
+.nav-small-link:hover {
+    background-color: white;
+
+}
+.nav-small-link:hover a {
+    color: black;
+}
+.nav-small-link a {
+    /* align-self: center; */
+    display: block;
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 735px) {
+    .nav-icon {
+        display: none;
+    }
+    .nav-main {
+        display: none;
+    }
+    .nav-main-small {
+        display: initial;
+    }
+ }

@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretDown, faCaretUp } from '@fortawesome/free-solid-svg-icons';
 import { Link, Route, Switch, useLocation } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Home from './components/Home';
@@ -8,7 +10,23 @@ import Sampleimage from './components/Sampleimage';
 import './components/styles/nav.css';
 import './App.css';
 
+const smallBackground = {
+  backgroundColor: 'rgba(0,0,0,0.9)'
+}
+
+const smallStyle = {
+  height: '100vh',
+}
+
 function App() {
+  const [ small, setSmall ] = useState(false);
+
+  const toggleNav = e => {
+    setSmall(!small);
+}
+const closeNav = e => {
+    setSmall(false);
+}
   let location = useLocation();
   return (
     <div className="App">
@@ -16,12 +34,25 @@ function App() {
           <div className="nav-icon">
             <p className="nav-icon-title">Blue Ocean</p>
           </div>
-          <ul className="nav-main">
-              <li className="nav-link"><Link to="/blueocean">Home</Link></li>
-              <li className="nav-link"><Link to="/blueocean/about">Services</Link></li>
-              <li className="nav-link"><Link to="/blueocean/sample">Sample Pictures</Link></li>
-              <li className="nav-link"><Link to="/blueocean/contact">Contact</Link></li>
-          </ul>
+          {/* {
+            !small ?  */}
+              <ul className="nav-main">
+                <li className="nav-link"><Link to="/blueocean">Home</Link></li>
+                <li className="nav-link"><Link to="/blueocean/about">Services</Link></li>
+                <li className="nav-link"><Link to="/blueocean/sample">Sample Pictures</Link></li>
+                <li className="nav-link"><Link to="/blueocean/contact">Contact</Link></li>
+              </ul> 
+              {/* : */}
+              <div class="nav-main-small" style={small ? smallBackground : null}>
+                <button onClick={toggleNav} className="nav-small-button">{small ? <FontAwesomeIcon icon={faCaretDown} /> : <FontAwesomeIcon icon={faCaretUp} />}</button>
+                <ul class="nav-small-list" style={small ? smallStyle : null}>
+                  <li className="nav-small-link"><Link onClick={closeNav} to="/blueocean">Home</Link></li>
+                  <li className="nav-small-link"><Link onClick={closeNav} to="/blueocean/about">Services</Link></li>
+                  <li className="nav-small-link"><Link onClick={closeNav} to="/blueocean/sample">Sample Pictures</Link></li>
+                  <li className="nav-small-link"><Link onClick={closeNav} to="/blueocean/contact">Contact</Link></li>
+                </ul>
+              </div>
+          {/* } */}
         </nav>
         <TransitionGroup>
             <CSSTransition

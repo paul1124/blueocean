@@ -16,11 +16,8 @@
 .home-heading {
     width: 100%;
     transform: translateX(200em);
-    /* right: 0; */
-    /* overflow: hidden; */
     height: 15em;
     margin-top: 12em;
-    /* position: absolute; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,12 +26,6 @@
     padding-right: 10em;
     background-color: rgb(36, 36, 36, 0.68);
     float: right;
-    /* animation-name: fade-in;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-delay: 0.4s; */
     animation-name: display-t;
     -webkit-animation-duration: 1s;
     animation-duration: 2s;
@@ -105,19 +96,22 @@
     margin: 0 auto;
     height: 100vh;
     position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.103), rgba(75, 75, 75, 0.68)), url('../images/home-about.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
 }
 
-.home-about-img {
+/* .home-about-img {
     position: absolute;
     width: 100%;
     height: inherit;
-    /* z-index */
     background-image: linear-gradient(rgba(0, 0, 0, 0.103), rgba(75, 75, 75, 0.68)), url('../images/home-about.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: none;
     z-index: 0;
-}
+} */
 
 .home-about-title {
     position: relative;
@@ -149,13 +143,54 @@
     text-align: left;
     flex: 1;
     opacity: 0;
-    transition: all 3s ease-in-out;
+    /* transition: all 3s ease-in-out; */
 }
 .home-map {
     opacity: 0;
-    transition: all 3s ease-in-out;
+    /* transition: all 3s ease-in-out; */
     flex: 1;
+    user-select: none;
 }
 .home-area {
     font-size: 0.5em;
 }
+
+@media only screen and (max-width: 1068px) {
+    .home-heading {
+        height: 12em;
+    }
+    .home-title {
+        font-size: 5em;
+    }
+    .home-subtitle {
+        font-size: 1.5em;
+    }
+    .home-description {
+        font-size: 0.75em;
+    }
+    .home-about-main {
+        width: 90%;
+    }
+    .about-main-intro {
+        padding: 0 1em; 
+        font-size: 1.25em;
+    }
+    /* .home-map {
+        flex: 2;
+    } */
+ }
+ @media only screen and (max-width: 735px) {
+    .home-heading {
+        padding-right: 3em;
+    }
+    .home-about-main {
+        flex-direction: column;
+    }
+    .about-main-intro {
+        margin-top: 1em;
+        padding-bottom: 2em;
+    }
+    .home-about {
+        height: auto;
+    }
+ }

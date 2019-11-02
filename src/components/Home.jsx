@@ -5,7 +5,7 @@ import Marker from 'pigeon-marker'
 import './styles/home.css';
 
 const map = (
-    <Map center={[34.4188413, -117.4166474]} zoom={8} width={600} height={400}>
+    <Map center={[34.4188413, -117.4166474]} zoom={8} height={400}>
       <Marker anchor={[33.7330433, -117.8321516]} payload={1} onClick={({ event, anchor, payload }) => {}} />
       <Marker anchor={[34.1775507, -118.2062456]} payload={1} onClick={({ event, anchor, payload }) => {}} />
       <Marker anchor={[34.9590695, -116.4269591]} payload={1} onClick={({ event, anchor, payload }) => {}} />
@@ -55,7 +55,7 @@ export default function Home() {
                     </div>
                     <p className="about-main-intro" style={aboutMain ? aboutMainStyle : null}>
                         Founded in 2014, <strong>Blue Ocean</strong> is an experienced contractor with expertise in Residential Remodeling.
-                        <br/><br/>With a wide range of specialty that takes account of both design and efficacy, <br/>we try and find the best remodeling experience for our clients. <br/><br/><strong>Blue Ocean</strong> team guarantees all kind of residential and commercial property with excellent quality at a reasonable price. 
+                        <br/><br/>With a wide range of specialty that takes account of both design and efficacy, we try and find the best remodeling experience for our clients. <br/><br/><strong>Blue Ocean</strong> team guarantees all kind of residential and commercial property with excellent quality at a reasonable price. 
                         <br/><br/><span className="home-area">*Our service covers L.A. and Orange County up to Inland Empire Area.</span>
                     </p>
                     

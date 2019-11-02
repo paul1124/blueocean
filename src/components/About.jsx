@@ -46,7 +46,7 @@ export default function About() {
                             <div className="about-task">
                                 <div className="about-task-icon"><FontAwesomeIcon icon={faTools} /></div>
                                 <h2 className="about-task-title">Repair</h2>
-                                <p className="about-task-description">We provide various repair services, as&nbsp;well as A/S maintenance of our&nbsp;remodeling</p>
+                                <p className="about-task-description">We provide various repair services, as well as A/S maintenance of our remodeling</p>
                             </div>
                             <div className="about-task">
                                 <div className="about-task-icon"><FontAwesomeIcon icon={faMountain} /></div>
@@ -70,7 +70,7 @@ export default function About() {
                         Get a Free Estimate
                     </Link>
                     <p>
-                        We choose materials with better quality at a reasonable price. <br/>
+                        We choose materials with better quality at a reasonable price.
                         Job will will be done with a professional standard with guarantee of satisfaction. <br/>
         ​                
                     </p>

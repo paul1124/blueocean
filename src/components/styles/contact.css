@@ -192,3 +192,31 @@
     opacity: 1;
     transition: all 250ms ease-in-out;
 }
+
+@media only screen and (max-width: 1068px) {
+    .contact {
+        height: auto;
+    }
+    .contact-flex {
+        flex-direction: column;
+    }
+    .contact-banner {
+        margin: 1em;
+    }
+    .contact-form-border {
+        width: 66%;
+        margin: 0 auto;
+    }
+    .contact-form form input[type="text"], .contact-form form input[type="email"], .contact-form form textarea {
+        width: 90%;
+    }
+ }
+ @media only screen and (max-width: 735px) {
+    .sampleimage-container {
+        width: 98%;
+    }
+    .contact-form-border {
+        width: 98%;
+        margin: 0 auto;
+    }
+ }

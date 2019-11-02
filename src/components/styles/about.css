@@ -181,3 +181,40 @@
     line-height: 1.25em;
     
 }
+
+@media only screen and (max-width: 1068px) {
+    .about-tasks {
+        width: 90%;
+    }
+    .about-task {
+        padding: 0.5em;
+    }
+    .about-task .about-task-icon {
+        font-size: 2em;
+    }
+    .about-task .about-task-title {
+        font-size: 1em;
+    }
+    .about-task-description {
+        font-size: 0.8em;
+    }
+
+ }
+ @media only screen and (max-width: 735px) {
+     .about {
+         overflow: auto;
+     }
+     .about-tasks {
+         flex-direction: column;
+         overflow: hidden;
+     }
+     .about-includes {
+         font-size: 0.5em;
+         padding: 0 5em;
+         margin: 2em 0;
+     }
+     .about-guarantee {
+         font-size: 0.85em;
+         margin: 2em auto;
+     }
+ }
